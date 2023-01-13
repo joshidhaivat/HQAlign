@@ -71,10 +71,10 @@ if (__name__ == "__main__"):
     else:
         reads,num_reads,name = func.get_genome_from_fasta(filename)
     import pickle
-    with open('qlevels.txt','rb') as f:
+    with open('source/qlevels.txt','rb') as f:
         qlevel = pickle.load(f)
     qlevels = qlevels_dict(qlevel)
-    kmermap = func.get_kmer_map('qmer_map/r9.4_6mer_nucleotide_template_model.txt')
+    kmermap = func.get_kmer_map('source/qmer_map/r9.4_6mer_nucleotide_template_model.txt')
     print('\tConverting nucleotide seqs to quantized seqs\n\tNumber of seqs = {}\t\tlevel = {}\trc = {}'.format(num_reads,level,rc))
     start = time.time()
     output = []
