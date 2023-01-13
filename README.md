@@ -32,7 +32,7 @@ HQAlign has been tested under Ubuntu 16.04. Please follow the steps to setup:
 ###### Step 1
 Download QAlign.
 ```
-$ git clone https://github.com/joshidhaivat/HQAlign.git
+git clone https://github.com/joshidhaivat/HQAlign.git
 ```
 
 ### Usage <a id='use'></a>
