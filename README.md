@@ -48,4 +48,7 @@ python hqalign.py convert -r [/path/to/input/fasta/reference]
 ```
 You can try using the test example:
 
-```python hqalign.py -r test/ref.fasta -i test/reads/ -o test/output/ -t 10 -k 18```
+```python hqalign.py -r test/ref.fasta -i test/reads/ -o test/output1/ -t 10 -k 18```
+
+And verify the converted sequences as well as alignments against files in directory: ```test/output/```
+
