@@ -2,7 +2,6 @@ import sys
 import os
 import all_functions as func
 import numpy as np
-import Levenshtein as L
 import multiprocessing as mp
 from multiprocessing import Pool
 import time

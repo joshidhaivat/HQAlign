@@ -1,11 +1,9 @@
 import numpy as np
 import sys
-import scipy.io as sio
+# import scipy.io as sio
 import time
 from multiprocessing import Pool
 import os
-import pdb
-import Levenshtein as L
 import all_functions as func
 from functools import partial
 import multiprocessing as mp
