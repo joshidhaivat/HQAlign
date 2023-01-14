@@ -52,3 +52,4 @@ You can try using the test example:
 
 And verify the converted sequences as well as alignments against files in directory: ```test/output/```
 
+Note that: this tool requires python3
