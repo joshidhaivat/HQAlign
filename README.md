@@ -30,7 +30,7 @@ Dhaivat Joshi, Suhas Diggavi, Mark J.P. Chaisson, Sreeram Kannan, bioRxiv 2023.0
 HQAlign has been tested under Ubuntu 16.04. Please follow the steps to setup:
 
 ###### Step 1
-Download QAlign.
+Download HQAlign.
 ```
 git clone https://github.com/joshidhaivat/HQAlign.git
 ```
@@ -46,3 +46,5 @@ python hqalign.py convert -r [/path/to/input/fasta/reference]
                           -t [number of threads (default=4)]
                           -k [minimizer length for the hybrid step (default=18)]
 ```
+You can try using the test example:
+```python hqalign.py -r test/ref.fasta -i test/reads/ -o test/output/ -t 10 -k 18```
