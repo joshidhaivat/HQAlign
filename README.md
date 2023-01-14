@@ -47,4 +47,5 @@ python hqalign.py convert -r [/path/to/input/fasta/reference]
                           -k [minimizer length for the hybrid step (default=18)]
 ```
 You can try using the test example:
+
 ```python hqalign.py -r test/ref.fasta -i test/reads/ -o test/output/ -t 10 -k 18```
