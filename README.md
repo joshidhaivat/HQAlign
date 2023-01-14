@@ -34,6 +34,13 @@ Download HQAlign.
 ```
 git clone https://github.com/joshidhaivat/HQAlign.git
 ```
+###### Step 2
+Activate virtual environment and install requirements.
+```
+cd HQAlign/
+source venv/bin/activate
+python -m pip install -r requirements.txt
+```
 
 ### Usage <a id='use'></a>
 
@@ -48,7 +55,9 @@ python hqalign.py convert -r [/path/to/input/fasta/reference]
 ```
 You can try using the test example:
 
-```python hqalign.py -r test/ref.fasta -i test/reads/ -o test/output1/ -t 10 -k 18```
+```
+python hqalign.py -r test/ref.fasta -i test/reads/ -o test/output1/ -t 10 -k 18
+```
 
 And verify the converted sequences as well as alignments against files in directory: ```test/output/```
 
