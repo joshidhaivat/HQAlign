@@ -47,11 +47,11 @@ python -m pip install -r requirements.txt
 ###### Usage:
 ```python hqalign.py [-h] -r REF -i READS -o OUTPUT [-t THREADS] [-k KMER]```
 ```
-python hqalign.py convert -r [/path/to/input/fasta/reference]
-                          -i [/path/to/input/fasta/reads/folder]
-                          -o [/path/to/output/directory]
-                          -t [number of threads (default=4)]
-                          -k [minimizer length for the hybrid step (default=18)]
+python hqalign.py -r [/path/to/input/fasta/reference]
+                  -i [/path/to/input/fasta/reads/folder]
+                  -o [/path/to/output/directory]
+                  -t [number of threads (default=4)]
+                  -k [minimizer length for the hybrid step (default=18)]
 ```
 You can try using the test example:
 
