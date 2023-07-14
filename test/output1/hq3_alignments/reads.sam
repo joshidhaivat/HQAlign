@@ -1,0 +1,3 @@
+@HD	VN:1.6	SO:unsorted	GO:query
+@SQ	SN:MT_human	LN:16569
+@PG	ID:minimap2	PN:minimap2	VN:2.26-r1175	CL:minimap2 -ax map-ont --MD -t 10 test/ref.fasta test/reads/reads.fasta
