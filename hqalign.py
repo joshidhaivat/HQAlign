@@ -39,7 +39,7 @@ def main():
             read_file = '{}{}'.format(args.reads,afile)
             samfile = '{}{}.sam'.format(outdir,afile.split('.fasta')[0])
             paffile = '{}{}.paf'.format(outdir,afile.split('.fasta')[0])
-            command_line = 'source/softwares/minimap2-2.24/minimap2 -ax map-ont --MD -t {} {} {} > {}'.format(args.threads,args.ref,read_file,samfile)
+            command_line = 'minimap2 -ax map-ont --MD -t {} {} {} > {}'.format(args.threads,args.ref,read_file,samfile)
             os.system(command_line)
             command_line = 'source/softwares/k8-0.2.4/k8-Linux source/softwares/minimap2-2.24/paftools.js sam2paf {} > {}'.format(samfile,paffile)
             os.system(command_line)
