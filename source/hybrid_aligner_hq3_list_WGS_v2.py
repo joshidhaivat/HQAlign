@@ -334,7 +334,9 @@ def hybrid_alignment(i):
     func.print_reads_to_fasta(print_rc_read,new_dir+'test_rc_read_'+pid+'.fasta',print_read_name)
     func.print_ref_to_fasta(print_ref,new_dir+'test_ref_'+pid+'.fasta',print_ref_name)
     # Perform alignment using minimap2
-    os.system('source/softwares/minimap2-2.24_hqalign/minimap2 -ax map-ont -t '+str(minimap2_threads)+' --MD -k '+str(kmer)+' -q '+new_dir+'test_rc_read_'+pid+'.fasta '+new_dir+'test_ref_'+pid+'.fasta '+new_dir+'test_read_'+pid+'.fasta > '+new_dir+'test_align_'+pid+'.sam')
+    command_line='minimap2 -ax map-ont -t '+str(minimap2_threads)+' --MD -k '+str(kmer)+new_dir+'test_rc_read_'+pid+'.fasta '+new_dir+'test_ref_'+pid+'.fasta '+new_dir+'test_read_'+pid+'.fasta > '+new_dir+'test_align_'+pid+'.sam'
+    print('minimap2 command line: {}'.format(command_line))
+    os.system(command_line)
     analyse_alignment_sam(new_dir+'test_align_'+pid+'.sam',outfile)
     return
 
